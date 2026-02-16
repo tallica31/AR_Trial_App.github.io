@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+#hud {
+  position: fixed;
+  top: env(safe-area-inset-top, 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 560px);
+  z-index: 20;
+  border-radius: 14px;
+  background: rgb(2 6 23 / 72%);
+  color: #e2e8f0;
+  backdrop-filter: blur(5px);
+  padding: 0.85rem 1rem;
+}
+
+#hud h1 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+}
+
+#status {
+  margin: 0;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+#reset-button {
+  margin-top: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: #0ea5e9;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+}
+
+#reset-button:active {
+  transform: scale(0.98);
+}
